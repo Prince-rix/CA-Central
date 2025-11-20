@@ -25,6 +25,10 @@ app.use((err, req, res, next) => {
 
 connectionDb();
 
-app.listen(Port,()=>{
-    console.log(`Running on Port ${Port}`)
-})
+// app.listen(Port,()=>{
+//     console.log(`Running on Port ${Port}`)
+// })
+
+app.listen(Port, "0.0.0.0", () => {
+    console.log(`Server running on port ${Port}`);
+});
