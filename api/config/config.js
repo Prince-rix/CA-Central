@@ -10,10 +10,10 @@ module.exports = {
     logging: false
   },
   production: {
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
-    host: process.env.DB_HOST,
+    username: process.env.db_User_Name,
+    password: process.env.db_password,
+    database: process.env.db_name,
+    host: process.env.db_host_name,
     dialect: 'postgres',
     logging: false,
     dialectOptions: {
