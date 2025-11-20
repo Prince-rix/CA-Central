@@ -14,15 +14,14 @@ const cors = require("cors");
 //Prod
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("API is running and DB connected!");
-});
 
 app.use("/api/webhook", express.raw({ type: "application/json" }));
 app.use(express.json());
 app.use("/api",router)
 
-
+app.get("/", (req, res) => {
+  res.send("API is running and DB connected!");
+});
 
 
 app.use((err, req, res, next) => {
